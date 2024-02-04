@@ -1,0 +1,76 @@
+body {
+    cursor: pointer;
+    background-color: #a5a5a5;
+    user-select: none;
+}
+
+.chessboard {
+    width: 640px;
+    height: 640px;
+    margin: 20px;
+    border: 15px solid #333;
+
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+}
+.black {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: #999;
+      font-size:50px;
+    text-align:center;
+    display: table-cell;
+    vertical-align:middle;
+}
+.white {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    font-size:50px;
+    text-align:center;
+    display: table-cell;
+    vertical-align:middle;
+}
+
+.click {
+    width: 100%;
+    height: 100%;
+
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.336);
+}
+
+#myToggleButton {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #505050;
+    cursor: pointer;
+
+    border-radius: 5px;
+
+    width: 80px;
+    height: 80px;
+
+    position: absolute;
+
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: auto;
+}
+
+#myToggleButton.active {
+    background-color: #000000;
+    border: 1px solid rgb(167, 167, 167);
+}
+
+/* Adding transitions for a smoother visual effect */
+#myToggleButton {
+    transition: background-color 0.3s ease;
+}
